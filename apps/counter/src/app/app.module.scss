@@ -1,1 +1,17 @@
-/* Your styles goes here. */
+@import "../styles";
+
+.container {
+  display: flex;
+  background-color: $main_color;
+  align-items: center;
+  min-height: calc(100vh - 200px);
+  flex-direction: column;
+  justify-content: center;
+  padding: 40px;
+}
+
+.btns {
+  display: flex;
+  margin-top: 40px;
+  gap: 20px;
+}

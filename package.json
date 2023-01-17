@@ -2,7 +2,12 @@
   "name": "nx-demo-project",
   "version": "0.0.0",
   "license": "MIT",
-  "scripts": {},
+  "scripts": {
+    "counter:start": "nx serve counter",
+    "counter:build": "nx build counter",
+    "questionnaire:start": "nx serve questionnaire",
+    "questionnaire:build": "nx build questionnaire"
+  },
   "private": true,
   "devDependencies": {
     "@babel/preset-react": "^7.14.5",
@@ -18,9 +23,10 @@
     "@svgr/webpack": "^6.1.2",
     "@testing-library/react": "13.4.0",
     "@types/jest": "28.1.1",
-    "@types/node": "16.11.7",
+    "@types/node": "18.11.9",
     "@types/react": "18.0.25",
     "@types/react-dom": "18.0.9",
+    "@types/react-router-dom": "5.3.3",
     "@typescript-eslint/eslint-plugin": "^5.36.1",
     "@typescript-eslint/parser": "^5.36.1",
     "babel-jest": "28.1.1",
@@ -44,8 +50,10 @@
     "url-loader": "^4.1.1"
   },
   "dependencies": {
+    "@blueprintjs/core": "^4.14.1",
     "react": "18.2.0",
     "react-dom": "18.2.0",
+    "react-router-dom": "6.4.3",
     "tslib": "^2.3.0"
   }
 }
