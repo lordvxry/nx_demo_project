@@ -1,11 +1,11 @@
-import { Button } from "@blueprintjs/core";
-import { useState } from "react";
-import style from "./app.module.scss"
-import { Header } from "@nx-demo-project/ui-kit";
+import { Button } from '@blueprintjs/core';
+import { FC, useState } from 'react';
+import style from './app.module.scss';
+import { Footer, Header } from '@nx-demo-project/ui-kit';
 
-const App = () => {
+const App: FC = () => {
   const [count, setCount] = useState(0);
-  const title = 'Welcome to Counter!'
+  const title = 'Welcome to Counter!';
   const incrementHandler = () => {
     setCount(prevState => prevState + 1);
   };
@@ -23,6 +23,7 @@ const App = () => {
           <Button intent="success" text="increment" onClick={incrementHandler} />
         </div>
       </div>
+      <Footer />
     </>
   );
 };

@@ -7,9 +7,13 @@
   "targets": {
     "lint": {
       "executor": "@nrwl/linter:eslint",
-      "outputs": ["{options.outputFile}"],
+      "outputs": [
+        "{options.outputFile}"
+      ],
       "options": {
-        "lintFilePatterns": ["libs/ui-kit/**/*.{ts,tsx,js,jsx}"]
+        "lintFilePatterns": [
+          "libs/ui-kit/**/*.{ts,tsx,js,jsx}"
+        ]
       }
     }
   }
